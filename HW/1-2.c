@@ -4,7 +4,7 @@
 #include <ctype.h>
 
 int getStringLength(char *input, int maxLength) {
-    for (int i = 0; i <= maxLength; i++) {
+    for (int i = 0; i < maxLength; i++) {
         input[i] = tolower(input[i]); // So capitalization doesn't matter
         if (input[i] == '\0')
             return i-1;
